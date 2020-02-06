@@ -34,10 +34,10 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 4px;
-        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+        grid-template-rows: 11vh 11vh 11vh 11vh 11vh;
     }
     * {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
