@@ -17,7 +17,9 @@ function buttonClick(buttonVal) {
 function evaluateExpression() {
     checkDisplayState();
     display_tag = document.getElementById("display");
+    prev_display_tag = document.getElementById("prev-display");
     expression = display_tag.textContent;
+    prev_display_tag.textContent = expression;
     try {
         result = eval(expression);
     } catch (e) {
