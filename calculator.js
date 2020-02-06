@@ -37,7 +37,7 @@ function clearLastDisplay() {
     display_tag.textContent = display_tag.textContent.slice(0, -1);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("eval-button").addEventListener("click", evaluateExpression);
     document.getElementById("clear-button").addEventListener("click", clearLastDisplay);
 });

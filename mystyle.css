@@ -3,16 +3,40 @@
     font-size: 1.5rem;
 }
 
-.calculator {
-    background-color:white;
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    width: 600px;
-    padding: 10px;
-    margin: auto;
+@media only screen and (min-device-width: 800px) {
+    .calculator {
+        background-color: white;
+        border: 2px solid #dcdcdc;
+        border-radius: 10px;
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+    }
+    .calculator-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4px;
+    }
 }
 
-.display > p {
+@media only screen and (max-device-width: 800px) {
+    .calculator {
+        background-color: white;
+        border: 2px solid #dcdcdc;
+        border-radius: 10px;
+        width: auto;
+        padding: 10px;
+        margin: auto;
+    }
+    .calculator-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4px;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    }
+}
+
+.display>p {
     border: 2px solid #dcdcdc;
     border-radius: 4px;
     padding: 20px 20px;
@@ -21,18 +45,12 @@
     word-wrap: break-word;
 }
 
-.previous-display > p {
+.previous-display>p {
     padding: 5px 40px;
     text-align: right;
     font-size: 1rem;
     margin: 0 0;
     word-wrap: break-word;
-}
-
-.calculator-buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4px;
 }
 
 button {
