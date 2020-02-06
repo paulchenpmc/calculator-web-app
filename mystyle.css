@@ -45,6 +45,6 @@ button:hover {
     background-color: #e1e2e3;
 }
 
-.double-button {
+#clear-button {
     grid-column: 3 / span 2;
 }
