@@ -1,6 +1,5 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
 }
 
 @media only screen and (min-device-width: 800px) {
@@ -16,6 +15,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 4px;
+    }
+    * {
+        font-size: 1.5rem;
     }
 }
 
@@ -33,6 +35,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 4px;
         grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    }
+    * {
+        font-size: 3rem;
     }
 }
 
